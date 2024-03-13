@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Ruby Guzman">
+        <meta name="description" content="Learn about Self-Help">
+        <title>Making Self-Help Simple: Buy</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="selfhelp.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Heading for Website-->
+        <header>
+            <h1>Making Self-Help Simple</h1>
+            <p>Exploring & Appreciating the Inside Work</p>
+        </header>
+        <!--Start of Navigation-->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="learn.html">Learn</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <!--Start of Page Content-->
+        <main class="formpage">
+            <h1>Contact Us!</h1>
+            
+            <!-- form information -->
+    
+            <form method="get" class="myform" action="thanks.html">
+                <fieldset>
+                    <legend>User Information</legend>
+                    <label>First Name:<input type="text" name="fname" required></label>
+                    <label>Last Name:<input type="text" name="lname" required></label>
+                    <label>Phone Number:<input type="tel" name="phone" required></label>
+                </fieldset>
+    
+                
+                <fieldset>
+                    <legend>Review Type</legend>
+                    <label><input type="checkbox" name="Feedback" value="Feedback">I have feedback!</label>
+                    <label><input type="checkbox" name="Suggestion/s" value="Suggestion/s">I got some suggestions!</label>
+                    <label><input type="checkbox" name="Questions" value="Contact for Questions">I have questions!</label>
+                </fieldset>
+    
+                <fieldset>
+                    <legend>How would you rate your experience here on <span id="trade">Making Self-Help Simple</span>?</legend>
+                    <label><input type="radio" name="method" value="5">5: Amazing experience!</label>
+                    <label><input type="radio" name="method" value="4">4: It was really great, but there's room to be 100!</label>
+                    <label><input type="radio" name="method" value="3">3: It was in the middle, there were some good things and bad things.</label>
+                    <label><input type="radio" name="method" value="2">2: It was okay but there's some things that are lacking.</label>
+                    <label><input type="radio" name="method" value="1">1: There's a lot of room for improvement.</label>
+                </fieldset>
+    
+                
+
+                <fieldset>
+                <legend>Help Us Refine</legend>
+                <label>What motivates you to use our website?<textarea name="comments">Please add your answer.</textarea></label>
+                <label>Which feature do you use the most?<textarea name="comments">Please add your answer.</textarea></label>
+                <label>What would you like to see improved on our site?<textarea name="comments">Please add your answer.</textarea></label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>On a scale of 1-10 how likely are you to recommend this site to a friend?</legend>
+                    <label><select name="time">
+                        <option value="none">Please select</option>
+                        <option value="One">1</option>
+                        <option value="Two">2</option>
+                        <option value="Three">3</option>
+                        <option value="Four">4</option>
+                        <option value="Five">5</option>
+                        <option value="Six">6</option>
+                        <option value="Seven">7</option>
+                        <option value="Eight">8</option>
+                        <option value="Nine">9</option>
+                        <option value="Ten">10</option>
+                    </select></label>
+                </fieldset>
+                <label>Comments: <textarea name="comments">Please add any extra comments.</textarea></label>
+                <input type="submit" value="Send Delivery Request">
+    
+            </form>
+             <!--The closing section-->
+        <footer>
+            <p>&copy; 2024 | Ruby Guzman &bull;</p>
+        </footer>
+        </main>
+        
+    </body>
