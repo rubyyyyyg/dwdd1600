@@ -1,0 +1,325 @@
+/*--- This is my css page.   ---*/
+body {
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+  }
+
+  header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
+
+  /*--- prevent problems with different browsers---*/
+  
+  *{box-sizing: border-box;}
+
+
+/* <weight>: Use a value from 400 to 900 */
+
+h2 {
+    font-weight: 350;
+}
+
+p {
+    font-weight: 300;
+}
+
+/*--- formatting header ---*/
+
+header {
+    padding: .25rem 2vw;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+header div {
+    padding: 2vw;
+}
+
+
+
+/* media queries small screen here */
+
+@media only screen and (max-width: 600px) {
+    nav ul {
+        margin: 0;
+        padding: 0 2vw;
+        list-style-type: none;
+    }
+
+    nav a{
+        display: block;
+        padding: .8rem;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: capitalize;
+        text-align: center;
+        border: solid 1px #aaaaaa;
+        color: #00432d;
+    }
+}
+
+nav li.active a{
+    background-color: #00432d;
+    color: white;
+    background-image: linear-gradient(to bottom, #00432d, #125b28);
+}
+/* media queries large screen here */
+@media only screen and (min-width: 601px) {
+    nav {
+        background-color: #72C674;
+    }
+    
+    nav ul { 
+    list-style-type: none;
+    padding: 0 2vw;
+    margin: 0;
+    display: flex;
+    } 
+    
+    nav a{
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: black;
+        font-weight: 700;
+        display: block;
+        padding: .83rem 2rem;
+    }
+    
+    nav li.active a{
+        background-color:#005F3F;
+        color: #72C674
+    }
+    
+    nav a:hover{
+        color: white;
+    }
+
+}
+
+/*--- formatting main ---*/
+
+main {
+    padding: 1rem 2vw;
+}
+
+main h1 {
+    color: #0078A0;
+}
+
+main h2 {
+    color: #005F3F;
+}
+
+main p {
+    font-size: 18px;
+}
+
+main ul {
+    list-style-type: square;
+}
+
+main ul li{
+    margin-bottom: .5rem;
+    padding: .75rem;
+}
+
+main ol {
+    padding: .3rem 3vw;
+    background-color: #efefef;
+    margin: .75rem;
+}
+
+main dl dt{
+    color: #005F3F;
+    font-weight: 700;
+    margin: .75rem;
+}
+
+main dl dd{
+    font-size: .9rem;
+    padding-top: .5rem;
+    padding-bottom: .1rem;
+}
+
+hr {
+    clear: both;
+    margin-top: 100px;
+}
+address.addresshome{
+    font-style:normal;
+    background-color:#72C674;
+    padding: .5rem;
+    width: 14rem;
+    border: 2px solid #005F3F;
+    border-radius: .8rem;
+}
+
+.introlearn {
+    font-size: 1.5rem;
+}
+
+/* form stuff here */
+
+.myform fieldset {
+    border: 1px solid #005F3F;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    background-color: white;
+}
+
+.myform legend {
+    color: #005F3F;
+    font-size: .8rem;
+}
+
+.myform label {
+    margin: 1rem;
+}
+
+.myform label, .myform select, .myform [type=text], .myform [type=tel], .myform textarea {
+    display: block;
+}
+
+.myform select, .myform [type=text], .myform [type=tel], .myform textarea {
+    border: solid 2px #bdbdc0;
+    padding: .3rem;
+    width: 250px;
+    font-family: 'Monserrat Alternates', sans-serif;
+    font-weight: 200;
+}
+
+.myform textarea {
+    height: 5rem;
+}
+
+.myform :required {
+    background-color: rgba(236, 118, 7, 0.1);
+}
+
+.myform [type=submit] {
+    background-image: linear-gradient(#005F3F, #477566, #00432d, #005F3F);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    color: white;
+    margin: 1rem 0 0 1vw;
+}
+
+#trade {
+    color:#0078A0;
+}
+
+.formpage {
+    background-color: #ffffff;
+}
+
+/*--- formatting thanks page ---*/
+
+.thankspage {
+    text-align: center;
+}
+
+/* table formatting here */
+
+table.hobbieideas {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table.hobbieideas th {
+    background-color: #00432d;
+    color: white;
+    padding: .5rem 2vw;
+    text-align: left;
+
+}
+
+table.hobbieideas td {
+    color: #005F3F;
+    padding: .5rem 2vw;
+}
+
+table.hobbieideas tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+table.hobbieideas tr:hover {
+    background-color: rgba(11, 156, 49, 0.2);
+}
+
+
+/*--- formatting footer ---*/
+
+footer {
+    background-color: #eaeaea;
+    text-align: center;
+    color: #024873;
+    padding: 1rem 0;
+    clear: both;
+    margin-top: 75px;
+}
+
+footer a{
+    color: #024873;
+}
+
+/*--- formatting images ---*/
+
+
+figure.home {
+    width: 30%;
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+figure.home img {
+    width: 100%;
+    height: auto;
+}
+
+figure.home figcaption {
+    text-align: center;
+    font-size: .75rem;
+    margin-bottom: 50px;
+}
+
+div.gallery {
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    width: 100%;
+}
+
+div.gallery figure {
+    margin: .5rem 2% 0 0;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-size: .8rem;
+}
+
+div.gallery img:hover {
+    box-shadow: 6px 6px 10px gray;
+}
+
+figure.hero {
+    width: 100%;
+    margin: 0px;
+}
+
+figure.hero img {
+    width: 100%;
+    max-width: 64rem;
+    margin: 0 auto;
+}
